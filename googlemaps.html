@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+        crossorigin="anonymous"></script>
+
+    <!--Formulario-->
+    <div class="container text-center p-2 mt-2 bg-primary-subtle rounded">
+        <div class="row ">
+            <div class="col-md-6">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3103.7434528534495!2d-67.98822642478703!3d-38.92984089864392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960a30ef2ee4b6b3%3A0xf60599626c221a60!2sCentro%20Educativo%20Tecnica%20N%C2%BA%2030!5e0!3m2!1ses!2sar!4v1690851284134!5m2!1ses!2sar"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            
+
+            <div class="col-md-6 position-relative w-100% p-2">
+                <form action="/registro" method="post">
+                    <div class="row text-center mb-2">
+                        <div class="col">
+                            <label for="nombreEtiqueta">Nombre:*</label>
+                            <input class="form-control" type="text" id="nombreEtiqueta" name="nombreEtiqueta">
+                        </div>
+                        <div class="col">
+                            <label for="emailEtiqueta">Email:*</label>
+                            <input class="form-control" type="email" id="emailEtiqueta" name="emailEtiqueta"
+                                placeholder="abc123@email.com">
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col">
+                            <label for="telEtiqueta">Teléfono:*</label>
+                            <input class="form-control" type="number" id="telEtiqueta" name="telEtiqueta">
+                        </div>
+                        <div class="col-">
+                            <label for="asuntoEtiqueta">Asunto</label>
+                            <input class="form-control" type="text" id="asuntoEtiqueta" name="asuntoEtiqueta">
+                        </div>
+                    </div>
+                    <div class="row  position-absolute bottom-0 w-100% text-center pb-2">
+                        <div class="col"><label for="mensajeTexto" class="form-label">Mensaje*</label>
+                            <textarea class="form-control" id="mensajeTexto" name="mensajeTexto" rows="3"
+                                style="height: 100%"></textarea></div>   
+                    </div>
+                    <div class="row col"> <button type="button" class="btn btn-info w-25 mt-2">Enviar</button></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
